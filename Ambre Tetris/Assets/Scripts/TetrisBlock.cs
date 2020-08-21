@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class TetrisBlock : MonoBehaviour
 {
-    public Vector3 rotationPoint; //sets the rotation point of the tetromino prefabs
     float previousTime; // to calculate the time elapsed since last frame
     float keyTimer; // Variable to calculate how long a key has been held dowm for GetKey function
     const int PIECE_SCORE = 1; // Set score for landing individual pieces
@@ -48,10 +47,10 @@ public class TetrisBlock : MonoBehaviour
         }
         else if (Input.GetKeyDown("space"))
         {
-            transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), 90);
+            transform.Rotate(new Vector3(0, 0, 90));
             if (!ValidMove())
             {
-                transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), -90);
+                transform.Rotate(new Vector3(0, 0, -90));
             }
         }
         else if (Input.GetKeyDown("escape"))

@@ -8,13 +8,16 @@ using UnityEngine.SceneManagement;
 
 public class SpawnTetromino : MonoBehaviour
 {
-    GameObject tetromino;
+    GameObject displayTetromino;
+    GameObject activeTetromino;
     int score;
     [HideInInspector]
     public int speed;
     public GameObject[] Tetrominos;
     public Text scoreDisplay;
     public Text speedDisplay;
+    bool activeGame = false;
+    Vector2 activeTetrominoPosition = new Vector2(4.5f, 18.5f);
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +28,7 @@ public class SpawnTetromino : MonoBehaviour
         DisplayHandler();
     }
 
-    void Update()
+    void LateUpdate()
     {
         DisplayHandler();
         AdjustSpeed();
@@ -33,7 +36,18 @@ public class SpawnTetromino : MonoBehaviour
 
     public void NewTetromino()
     {
-        tetromino = Instantiate(Tetrominos[Random.Range(0, Tetrominos.Length)], transform.position, Quaternion.identity);
+        if (!activeGame) {
+            activeGame = true;
+            activeTetromino = Instantiate(Tetrominos[Random.Range(0, Tetrominos.Length)], activeTetrominoPosition, Quaternion.identity);
+            displayTetromino = Instantiate(Tetrominos[Random.Range(0, Tetrominos.Length)], transform.position, Quaternion.identity);
+            displayTetromino.GetComponent<TetrisBlock>().enabled = false;
+        } else {
+            displayTetromino.transform.localPosition = activeTetrominoPosition;
+            activeTetromino = displayTetromino;
+            activeTetromino.GetComponent<TetrisBlock>().enabled = true;
+            displayTetromino = Instantiate(Tetrominos[Random.Range(0, Tetrominos.Length)], transform.position, Quaternion.identity);
+            displayTetromino.GetComponent<TetrisBlock>().enabled = false;
+        }
     }
 
     public void Score(int addedScore)
