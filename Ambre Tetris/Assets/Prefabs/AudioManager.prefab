@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2757056108614504901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2757056108614504903}
+  - component: {fileID: 2757056108614504902}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2757056108614504903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757056108614504901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2757056108614504902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757056108614504901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e584ceb6f95006440aaf67bcd73a21d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: clearLine
+    clip: {fileID: 8300000, guid: de4f1c9cd29dd424289a0df4af5ddc4a, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: landPiece
+    clip: {fileID: 8300000, guid: fc521f83fa520934898e955bfe37d1d5, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: gameOver
+    clip: {fileID: 8300000, guid: 875a558651e4ad948b09d02d921ed280, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: slowGame
+    clip: {fileID: 8300000, guid: 57b325575ea19a84b952dc88469f1cb5, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 1
+  - name: midGame
+    clip: {fileID: 8300000, guid: b6c747d5c72825944ae74eecc0abba11, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 1
+  - name: fastPace
+    clip: {fileID: 8300000, guid: e8be9fe7716b3cd47900de27593bc37b, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 1

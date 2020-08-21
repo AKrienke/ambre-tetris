@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - GameOver
     - RestartScript
     - SpawnTetromino
@@ -43,26 +44,30 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12816}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 13614}
     - Class: 114
-      Script: {instanceID: 14404}
+      Script: {instanceID: 14430}
     - Class: 114
-      Script: {instanceID: 14602}
+      Script: {instanceID: 14628}
     - Class: 114
-      Script: {instanceID: 15038}
+      Script: {instanceID: 15064}
     - Class: 114
-      Script: {instanceID: 23740}
+      Script: {instanceID: 15066}
+    - Class: 114
+      Script: {instanceID: 22990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -96,22 +101,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12816}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13452}
     - Class: 114
-      Script: {instanceID: 14404}
+      Script: {instanceID: 14430}
     - Class: 114
-      Script: {instanceID: 14630}
+      Script: {instanceID: 14656}
     - Class: 114
-      Script: {instanceID: 15038}
+      Script: {instanceID: 15066}
+    - Class: 114
+      Script: {instanceID: 22990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -597,6 +606,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: acabdd36d442c7dca04f67d6c5ac7fde
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartScript
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -633,10 +648,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: acabdd36d442c7dca04f67d6c5ac7fde
+      Hash: d0960b1cf5c93664eea3a457c8b4bcb7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RestartScript
+    className: AudioManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main Screen.unity

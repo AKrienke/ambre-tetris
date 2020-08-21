@@ -2,8 +2,9 @@
  * initial code was from tutorials, refinements came through research
  from unity.com API pages */
 
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class TetrisBlock : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class TetrisBlock : MonoBehaviour
         fallTimer = 1.0f;
         keyTimer = 0;
         previousTime = Time.deltaTime;
+
     }
 
     void Update() //Get User input at the beginning of each frame.
@@ -65,6 +67,8 @@ public class TetrisBlock : MonoBehaviour
             if (!ValidMove())
             {
                 transform.position -= new Vector3(0, -1, 0);
+                
+                FindObjectOfType<AudioManager>().Play("landPiece");
                 AddToGrid();
                 CheckForLines();
                 this.enabled = false;
@@ -119,6 +123,7 @@ public class TetrisBlock : MonoBehaviour
             Destroy(grid[j, i].gameObject);
             grid[j, i] = null;
         }
+        FindObjectOfType<AudioManager>().Play("clearLine");
     }
 
     void RowDown(int i) // Moves the lines that have not been deleted down

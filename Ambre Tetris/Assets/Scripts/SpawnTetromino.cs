@@ -26,6 +26,7 @@ public class SpawnTetromino : MonoBehaviour
         speed = 1;
         NewTetromino();
         DisplayHandler();
+        ChangeThemeSong("slowGame");
     }
 
     void LateUpdate()
@@ -73,6 +74,11 @@ public class SpawnTetromino : MonoBehaviour
         else if (score > 50) { speed = 2; }
     }
 
+    void ChangeThemeSong(string theme)
+    {
+
+        FindObjectOfType<AudioManager>().Play(theme);
+    }
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");
