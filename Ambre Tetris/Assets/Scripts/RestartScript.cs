@@ -7,7 +7,12 @@ public class RestartScript : MonoBehaviour
 {
     public Button restartButton;
     public Button quitButton;
+    [HideInInspector]
+    public static int finalScore;
+    public Text finalScoreDisplay;
+
     void Start () {
+        finalScoreDisplay.text = "Your final score is:\n\n" + finalScore.ToString();
 		Button btn1 = restartButton.GetComponent<Button>();
 		btn1.onClick.AddListener(Restart);
         Button btn2 = quitButton.GetComponent<Button>();
@@ -21,5 +26,10 @@ public class RestartScript : MonoBehaviour
     void Quit()
     {
         Application.Quit();
+    }
+
+    void FinalScore()
+    {
+        
     }
 }

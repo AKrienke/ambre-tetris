@@ -55,19 +55,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 13228}
     - Class: 114
-      Script: {instanceID: 14430}
+      Script: {instanceID: 13618}
     - Class: 114
-      Script: {instanceID: 14628}
+      Script: {instanceID: 14434}
     - Class: 114
-      Script: {instanceID: 15064}
+      Script: {instanceID: 14632}
     - Class: 114
-      Script: {instanceID: 15066}
+      Script: {instanceID: 15072}
     - Class: 114
-      Script: {instanceID: 22990}
+      Script: {instanceID: 15074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -110,17 +110,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 13452}
+      Script: {instanceID: 13228}
     - Class: 114
-      Script: {instanceID: 14430}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 14656}
+      Script: {instanceID: 14434}
     - Class: 114
-      Script: {instanceID: 15066}
+      Script: {instanceID: 14660}
     - Class: 114
-      Script: {instanceID: 22990}
+      Script: {instanceID: 15074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -384,6 +384,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: d0960b1cf5c93664eea3a457c8b4bcb7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -606,7 +612,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: acabdd36d442c7dca04f67d6c5ac7fde
+      Hash: 60cc8d2e4abad38b190fbc05051ff8ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RestartScript
@@ -646,12 +652,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: d0960b1cf5c93664eea3a457c8b4bcb7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main Screen.unity

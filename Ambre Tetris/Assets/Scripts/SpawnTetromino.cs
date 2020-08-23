@@ -1,5 +1,4 @@
-﻿/* Tetris created by A.j. Krienke starting on June 04 2020
- * This code is mostly from research on unity.com API pages */
+﻿// Tetris created by A.j. Krienke starting on June 04 2020
 
 using System.Collections;
 using UnityEngine.UI;
@@ -81,6 +80,7 @@ public class SpawnTetromino : MonoBehaviour
     }
     public void GameOver()
     {
+        RestartScript.finalScore = score;
         SceneManager.LoadScene("GameOver");
     }
 }
